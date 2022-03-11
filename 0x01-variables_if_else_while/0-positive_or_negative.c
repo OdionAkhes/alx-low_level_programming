@@ -27,16 +27,3 @@ printf("%d is negative\n", n);
 }
 return (0);
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-
