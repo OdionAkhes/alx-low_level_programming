@@ -1,63 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
 /**
- * op_add - adds two integers
- * @a: first integer
- * @b: second integer
- * Return: sum of two integers
+ * op_add - Struct op
+ *
+ * @a: The operator
+ * @b: The function associated
+ * Return: int
  */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
-
-
 /**
- * op_sub - subtracts two integers
- * @a: first integer
- * @b: second integer
- * Return: difference of two integers
+ * op_sub - Struct op
+ *
+ * @a: The operator
+ * @b: The function associated
+ * Return: int
  */
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
-
 /**
- * op_mul - multiply two integers
- * @a: first integer
- * @b: second integer
- * Return: product of two integers
+ * op_mul - Struct op
+ *
+ * @a: The operator
+ * @b: The function associated
+ * Return: int
  */
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
-
 /**
- * op_div - divides two integers
- * @a: first integer
- * @b: second integer
- * Return: quotient of two integers
+ * op_div - Struct op
+ *
+ * @a: The operator
+ * @b: The function associated
+ * Return: int
  */
 int op_div(int a, int b)
 {
-	if (!b)
+	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 	return (a / b);
 }
-
 /**
- * op_mod - calculates modulus two integers
- * @a: first integer
- * @b: second integer
- * Return: modulus of two integers
+ * op_mod - Struct op
+ *
+ * @a: The operator
+ * @b: The function associated
+ * Return: int
  */
 int op_mod(int a, int b)
 {
-	if (!b)
+	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
