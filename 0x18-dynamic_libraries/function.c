@@ -1,68 +1,56 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+
 /**
- * op_add - Struct op
- *
- * @a: The operator
- * @b: The function associated
- * Return: int
+ * add - addition operator
+ * @a: first int
+ * @b: second int
+ * Return: sum of 2 numbers
  */
-int op_add(int a, int b)
+int add(int a, int b)
 {
 	return (a + b);
 }
+
 /**
- * op_sub - Struct op
- *
- * @a: The operator
- * @b: The function associated
- * Return: int
+ * sub - subtraction operator
+ * @a: first in
+ * @b: second int
+ * Return: difference of 2 numbers
  */
-int op_sub(int a, int b)
+int sub(int a, int b)
 {
 	return (a - b);
 }
+
 /**
- * op_mul - Struct op
- *
- * @a: The operator
- * @b: The function associated
- * Return: int
+ * mul - product of 2 numbers
+ * @a: first int
+ * @b: second int
+ * Return: product of the numbers
  */
-int op_mul(int a, int b)
+int mul(int a, int b)
 {
 	return (a * b);
 }
+
 /**
- * op_div - Struct op
- *
- * @a: The operator
- * @b: The function associated
- * Return: int
+ * div - division of 2 numbers
+ * @a: first int
+ * @b: second int
+ * Return: result of the division of the numbers
  */
-int op_div(int a, int b)
+int div(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
 	return (a / b);
 }
+
 /**
- * op_mod - Struct op
- *
- * @a: The operator
- * @b: The function associated
- * Return: int
+ * mod - get remainder of the division of 2 numbers
+ * @a: first int
+ * @b: second int
+ * Return: remainder of division of the numbers
  */
-int op_mod(int a, int b)
+int mod(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
 	return (a % b);
 }
